@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Wallet Dashboard</title>
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap-3/css/bootstap-3.min.css" rel="stylesheet" id="bootstrap-css">
+   
+   
+    <link rel="stylesheet" href="dash-style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+
+<div id="wrapper">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+    			<!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        			<span class="sr-only">Toggle navigation</span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+    			</button> -->
+                <div  class="navbar-brand">
+                    <a id="menu-toggle" href="#" class=" btn-menu toggle">
+                        <i class="fa fa-bars"></i>
+                    </a>
+    				<a href="#" class="project-title">Wallet site</a>
+                </div>
+            </div>
+            
+            <div class="nav-header-2">
+            <ul class="nav navbar-nav">
+             <h4>DASHBOARD</h4>
+            </ul>
+
+            <div class="header-icons" style="float: right;">
+                <span>0</span> <i class="fa fa-bell" aria-hidden="true" data-toggle="modal" data-target="#myModal2" title="View Messages"></i>
+                <i class="fa fa-power-off" aria-hidden="true" title="Log out"></i>
+            </div>
+        </div>
+			<!-- <div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+				</ul>
+            </div> -->
+            <!--/.nav-collapse -->
+		</div>
+	</nav>
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        
+        <nav id="spy">
+            <ul class="sidebar-nav nav">
+                <div class="profile-area">
+                    <p>PROFILE</p>
+                    <img src="profile/user-profile.png" alt="wallet-profile" class="img-responsive profile">
+                    <p class="username">Username</p>
+                    <button class="btn btn-package"> <i class="fa fa-star" aria-hidden="true"></i> Starter</button>
+                </div>
+                <li class="active">
+                    <a href="dashboard.html"><span class="fa fa-dashboard">Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="overview.html">
+                        <span class="fa fa-list-alt">Overview</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="transfer.html">
+                        <span class="fa fa-money">Transfer</span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="#anch3">
+                        <span class="fa fa-anchor solo">Recent Transactions</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="contact-support.html">
+                        <span class="fa fa-phone">Contact Support</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="messages.html">
+                        <span class="fa fa-comments">Messages</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Page content -->
+    <div id="page-content-wrapper">
+        <div class="page-content">
+            <div class="container-fluid">
+               <h4>DASHBOARD</h4>
+               <br><br>
+               <div class="dashboard-area">
+
+                <div class="row">
+
+                <div class="col-md-4">
+                 <div class="wallet-card">
+                    <p><b>Your Available Balance</b></p>
+                    <h2>₦0.00</h3>
+                    <p>ID</p>
+                    <div>
+                        <input type="text" value="357" id="myInput" style="width: 100px;"> <button onclick="myFunction()" class="btn-id">Copy Id</button>
+                    </div>
+                    <br>
+                   <div class="row">
+                       <div class="col-md-6">
+                        <button type="button" class="btn btn-acc-no" data-toggle="modal" data-target="#myModal">Account Numbers</button>
+                       </div>
+                       <div class="col-md-6">
+                        <button type="button" class="btn btn-fund-wallet" data-toggle="modal" data-target="#myModal-2">Fund your Wallet</button>
+                       </div>
+                   </div>
+                 </div>
+               </div>
+
+                <div class="col-md-8">
+                    <div class="transaction-area">
+                    <select name="day" id="select-days" class="select-picker form-control">
+                        <option value="today" selected>Today</option>
+                        <option value="Yesterday">Yesterday</option>
+                        <option value="this-month">This month</option>
+                    </select>
+
+                    <br><br>
+                    <!-- <table class="transaction-table">
+                       <tr>
+                           <th style="border-right: 1px solid rgb(245, 142, 17);">Transactions</th>
+                           <th style="border-right: 1px solid rgb(245, 142, 17); padding-left: 10px;">Outflow</th>
+                           <th style="padding-left: 10px;">Inflow</th>
+                       </tr>
+                       <tr>
+                           <td style="border-right: 1px solid rgb(245, 142, 17);"><h2>0</h2></td>
+                           <td style="border-right: 1px solid rgb(245, 142, 17); padding-left: 10px;"><h2>₦0.00</h2></td>
+                           <td style="padding-left: 10px;"><h2>₦0.00</h2></td>
+                       </tr>
+                    </table> -->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="money-value">
+                           <p><b>Transactions</b></p>
+                           <h2>0</h2>
+                        </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="money-value">
+                           <p><b>Outflow</b></p>
+                           <h2>₦0.00</h2>
+                        </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="money-value last">
+                            <p><b>Inflow</b></p>
+                            <h2>₦0.00</h2>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Account Modal -->
+<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Account Numbers</h4>
+        </div>
+        <div class="modal-body">
+
+               <h5 class="text-center" style="color: rgb(245, 142, 17); font-size: 20px; padding: 20px;"><b>Choose Account</b></h5>
+
+            <form action="">
+                <div class="container check-account">
+                    <div class="radio">
+                        <label for="diamond" style="font-size: 18px;">
+                    <input type="radio" name="optionsRadios" id="diamond" value="option1" checked>
+                    Diamond Account - 24579874652</label>
+                    </div>
+
+                    <br>
+                     
+                    <div class="radio">
+                    <label for="uba" style="font-size: 18px;">
+                    <input type="radio" name="optionsRadios" id="uba" value="option2">
+                    UBA Account - 354178763771</label>
+                    </div>
+                </div>    
+
+            </form>
+
+          <!-- <div class="form-group">
+             <label for="diamond-acc">Diamond Bank</label>
+             <div class="row">
+                 <div class="col-md-9">
+                     <input type="text" class="form-control" id="diamond-acc" value="24579874652">
+                 </div>
+                 <div class="col-md-3">
+                     <button onclick="diamond()" class="btn btn-id bank">Copy</button>
+                 </div>
+             </div>
+          </div>
+
+          <div class="form-group">
+            <label for="diamond-acc">UBA Bank</label>
+            <div class="row">
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="uba-acc" value="354178763771">
+                </div>
+                <div class="col-md-3">
+                    <button onclick="UBA()" class="btn btn-id bank">Copy</button>
+                </div>
+            </div>
+         </div> -->
+
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <!--Fund-Wallet Modal -->
+<div class="modal fade" id="myModal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h3 class="modal-title text-center fund-wallet" id="myModalLabel">Fund your Wallet</h3>
+        </div>
+        <div class="modal-body">
+        
+        <form action="">
+          <div class="form-group">
+            <label for="amount">Amount</label>
+            <input type="text" class="form-control" id="amount" name="amount" placeholder="Enter amount">
+          </div>
+
+          <div class="form-group">
+            <label for="card-number">Card Number</label>
+            <input type="text" class="form-control" id="card-number" name="card-number" placeholder="Enter card number">
+         </div>
+
+         <div class="row">
+             <div class="form-group col-md-6">
+               <label for="expiry-date">Expiry Date</label>
+               <input type="date" class="form-control" id="expiry-date" name="expiry-date" placeholder="mm/dd/yy">
+             </div>
+             <div class="form-group col-md-6">
+              <label for="wallet-id">Wallet ID</label>
+              <input type="text" class="form-control" id="wallet-id" name="id" placeholder="Insert given ID">
+             </div>
+         </div>
+
+         <div class="form-group text-center" style="padding: 20px;">
+             <button type="submit" class="btn btn-fund">Fund Wallet</button>
+         </div>
+        </form>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+ <!-- Modal Notification -->
+<div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content notification-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel2">Notifications</h4>
+            </div>
+
+            <div class="modal-body">
+                <h4 class="view"><b>View Messages</b></h4>
+                <div class="table-responsive">
+                    <table class="table-hover">
+                        <tr class="message-title" title="View full message">
+                            <th><a href="messages.html" style="text-decoration: none; color: black;">You have successfully logged into our dashboard</a></th>
+                            <th><a href="messages.html" style="text-decoration: none; color: black;">1/11/2021 <br> 5:00pm</a></th>
+                        
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+</div><!-- modal -->
+
+
+<script src="js/sweet-alert.js"></script>
+<script>
+    function myFunction() {
+      var copyText = document.getElementById("myInput");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999)
+      document.execCommand("copy");
+      Swal.fire({
+                icon: 'success',
+                title: 'Success',
+                text: "Copied id: " + copyText.value,
+  
+            });
+}
+
+// function diamond() {
+//       var copyText = document.getElementById("diamond-acc");
+//       copyText.select();
+//       copyText.setSelectionRange(0, 99999)
+//       document.execCommand("copy");
+//       Swal.fire({
+//                 icon: 'success',
+//                 title: 'Success',
+//                 text: "Copied Diamond Bank Account Number: " + copyText.value,
+  
+//             });
+// }
+
+// function UBA() {
+//       var copyText = document.getElementById("uba-acc");
+//       copyText.select();
+//       copyText.setSelectionRange(0, 99999)
+//       document.execCommand("copy");
+//       Swal.fire({
+//                 icon: 'success',
+//                 title: 'Success',
+//                 text: "Copied UBA Bank Account Number: " + copyText.value,
+  
+//             });
+// }
+    
+    </script>
+
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="js/main.js"></script>
+    <!-- <script src="https://cdn.bootcss.com/jquery/1.12.1/jquery.js"></script> -->
+    <script src="js/jquery-1.11.1.js"></script>
+    <script>
+        	/*Menu-toggle*/
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+        
+    });
+
+    </script>
+    <script src="bootstrap-3/js/bootstrap-3.min.js"></script>
+
+  </body>
+</html>    
