@@ -1,0 +1,490 @@
+#wrapper {
+    padding-left: 250px;
+    transition: all 0.4s ease 0s;
+  }
+  
+  #sidebar-wrapper {
+    margin-left: -250px;
+    top: 51px;
+    left: 250px;
+    width: 250px;
+    background: #000;
+    position: fixed;
+    height: 100%;
+    max-height: 625px;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: all 0.4s ease 0s;
+  }
+  
+  #wrapper.active {
+    padding-left: 0;
+  }
+  
+  #wrapper.active #sidebar-wrapper {
+    left: 0;
+  }
+  
+  #page-content-wrapper {
+    width: 100%;
+    padding-top: 70px;
+    transition: all 0.4s ease 0s;
+  }
+  
+  .sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
+  font-size: 16px;
+}
+
+.sidebar-nav li a {
+  color: #999999;
+  display: block;
+  text-decoration: none;
+  padding-left: 60px;
+}
+
+.sidebar-nav li a span:before {
+  position: absolute;
+  left: 0;
+  color: #41484c;
+  text-align: center;
+  width: 20px;
+  line-height: 18px;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li.active {
+  color: #fff;
+  background: rgba(255,255,255,0.2);
+  text-decoration: none;
+  border-left: 2px solid rgb(245, 142, 17);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  line-height: 60px;
+  font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+#menu-toggle {
+    text-decoration: none;
+    float: left;
+    color: #fff;
+    padding-right: 15px;
+}
+
+@media (max-width:767px) {
+
+#wrapper {
+  padding-left: 0;
+}
+
+#sidebar-wrapper {
+  left: 0;
+}
+
+#wrapper.active {
+  position: relative;
+  left: 250px;
+}
+
+#wrapper.active #sidebar-wrapper {
+  left: 250px;
+  width: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+#menu-toggle {
+  display: inline-block;
+}
+
+}
+
+#wrapper .navbar h4 {
+  color: white;
+  padding-top: 7px;
+  margin-left: 150px;
+  
+} 
+
+#wrapper .navbar .header-icons {
+  color: white;
+  font-size: 18px;
+  margin-right: 10px;
+  margin-top: 15px;
+  
+}
+
+#wrapper .navbar .header-icons .fa-bell  {
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.fa-power-off {
+  cursor: pointer;
+}
+
+#wrapper .navbar .header-icons span {
+  color: #fff;
+  position: absolute;
+  font-size: 12px;
+  width: 15px;
+  height: 15px;
+  top: 8px;
+  right: 70px;
+  background-color: rgb(245, 142, 17);
+  border-radius: 50%;
+  text-align: center;
+  font-size: em(10);
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  #wrapper .navbar h4 {
+    margin-left: 20px;
+  }
+
+  #wrapper .navbar .header-icons {
+    margin-top: -40px;
+
+  }
+
+  #sidebar-wrapper {
+    top: 90px;
+    max-height: 550px;
+  }
+
+  .nav-header-2 {
+    margin-top: -20px;
+  }
+
+  #wrapper .navbar .header-icons span {
+    top: 45px;
+  }
+
+  .btn-fund-wallet {
+    margin-top: 15px;
+  }
+
+  .money-value {
+    border-right: 0px !important;
+  }
+
+  .transaction-area {
+    margin-top: 20px;
+  }
+
+  .Information {
+    margin-top: 40px;
+  }
+  
+  .page-content h4 {
+    margin-top: 30px;
+  }
+ 
+}
+
+
+
+
+@media (max-width: 480px) {
+  #sidebar-wrapper {
+  max-height: 450px;
+  }
+
+  .modal.right .modal-dialog {
+    width: 100% !important;
+  }
+}
+
+
+
+.profile-area {
+  background-color: rgb(27, 27, 27);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.profile-area p {
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 18px;
+} 
+
+.profile-area .profile {
+  border-radius: 50%;
+  width: 100px;
+  margin-left: 70px;
+}
+
+.profile-area .username {
+  font-size: 16px;
+  padding-bottom: 0px;
+}
+
+.btn-package {
+  border-radius: 0px;
+  background-color: rgb(245, 142, 17);
+  color: white;
+  font-weight: 500;
+}
+
+.project-title {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.project-title:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.fa-bars {
+  color: rgb(245, 142, 17);
+}
+
+.page-content {
+  padding: 20px;
+}
+
+.page-content h4 {
+  color: rgb(245, 142, 17);
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.dashboard-area .wallet-card {
+  background-color: rgb(27, 27, 27);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.wallet-card p {
+  color: white;
+  font-size: 15px;
+}
+
+.wallet-card h2 {
+  color: rgb(245, 142, 17);
+}
+
+.btn-id {
+  color: white;
+  background-color: rgb(245, 142, 17);
+}
+
+.btn-acc-no {
+  color: rgb(245, 142, 17);
+  background-color: white;
+  border-radius: 0px;
+  width: 100%;
+ 
+}
+
+.btn-acc-no:hover {
+  color: white;
+  background-color: rgb(245, 142, 17);
+}
+
+.btn-fund-wallet {
+  background-color: transparent;
+  color: rgb(245, 142, 17);
+  border: 1px solid rgb(245, 142, 17);
+  border-radius: 0px;
+  width: 100%;
+ 
+}
+
+.btn-fund-wallet:hover {
+  color: white;
+  background-color: rgb(245, 142, 17);
+  border: 1px solid white;
+}
+
+.transaction-area {
+  box-shadow: 5px 5px 5px 5px #c4c3c3;
+  padding: 25px;
+}
+
+#select-days {
+  width: 100px;
+  float: right;
+}
+
+.money-value {
+  border-right: 1px solid grey;
+}
+
+.money-value.last {
+  border-right: 0px;
+}
+
+.money-value p {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.money-value h2 {
+  color: rgb(245, 142, 17);
+}
+
+.btn-id.bank:hover {
+   color: white;
+}
+
+.fund-wallet {
+  color: rgb(245, 142, 17);
+}
+
+.btn-fund {
+  color: white;
+  font-size: 17px;
+  background: rgb(245, 142, 17);
+  border-radius: 0px;
+  width: 200px;
+}
+
+.btn-fund:hover {
+  color: white;
+  background-color: rgb(27, 27, 27);
+}
+
+.overview-header {
+  background-color: rgb(252, 246, 236);
+  padding: 20px;
+}
+
+.overview-header h1 {
+  color: rgb(245, 142, 17);
+}
+
+.recent-transactions {
+  color: rgb(49, 49, 49);
+  font-weight: 540;
+}
+
+.btn-transfer {
+  color: white;
+  background-color: rgb(245, 142, 17);
+  width: 100px;
+}
+
+.btn-transfer:hover {
+  color: white;
+  opacity: 0.9;
+}
+
+.modal.right .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 400px;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+      -ms-transform: translate3d(0%, 0, 0);
+       -o-transform: translate3d(0%, 0, 0);
+          transform: translate3d(0%, 0, 0);
+}
+
+.modal.right .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+/*Right*/
+.modal.right.fade .modal-dialog {
+  right: -320px;
+  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+     -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+       -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+          transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal.right.fade.in .modal-dialog {
+  right: 0;
+}
+
+/* ----- MODAL STYLE ----- */
+.notification-content {
+  border-radius: 0;
+  border: none;
+}
+
+.modal-header {
+  border-bottom-color: #EEEEEE;
+  background-color: #FAFAFA;
+}
+
+.modal-body .view {
+  color: rgb(245, 142, 17);
+}
+
+.message-title th {
+  padding: 20px 10px 20px 10px;
+}
+
+.date-time {
+  float: right;
+}
+
+.message-head p {
+   font-size: 16px;
+}
+
+.message-link {
+  color: rgb(245, 142, 17);
+}
+
+.message-link:hover {
+  color: rgb(245, 142, 17);
+}
+
+.dashboard-area h5 {
+  font-size: 18px;
+}
+
+.dashboard-area h6 {
+  font-size: 16px;
+  color: rgb(245, 142, 17);
+}
+
+.btn-submit {
+  color: white;
+  background-color: rgb(245, 142, 17);
+  border-radius: 0px;
+  width: 80px;
+  font-size: 15px;
+}
+
+.btn-submit:hover {
+  color: white;
+}
+
+.check-account {
+  padding-bottom: 30px;
+}

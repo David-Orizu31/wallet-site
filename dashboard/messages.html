@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Wallet Dashboard</title>
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap-3/css/bootstap-3.min.css" rel="stylesheet" id="bootstrap-css">
+   
+   
+    <link rel="stylesheet" href="dash-style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+
+<div id="wrapper">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+    			<!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        			<span class="sr-only">Toggle navigation</span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+    			</button> -->
+                <div  class="navbar-brand">
+                    <a id="menu-toggle" href="#" class=" btn-menu toggle">
+                        <i class="fa fa-bars"></i>
+                    </a>
+    				<a href="#" class="project-title">Wallet site</a>
+                </div>
+            </div>
+            
+            <div class="nav-header-2">
+            <ul class="nav navbar-nav">
+             <h4>MESSAGES</h4>
+            </ul>
+
+            <div class="header-icons" style="float: right;">
+               <span>0</span> <i class="fa fa-bell" aria-hidden="true" data-toggle="modal" data-target="#myModal2" title="View Messages"></i>
+                <i class="fa fa-power-off" aria-hidden="true" title="Log out"></i>
+            </div>
+        </div>
+			<!-- <div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+				</ul>
+            </div> -->
+            <!--/.nav-collapse -->
+		</div>
+	</nav>
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        
+        <nav id="spy">
+            <ul class="sidebar-nav nav">
+                <div class="profile-area">
+                    <p>PROFILE</p>
+                    <img src="profile/user-profile.png" alt="wallet-profile" class="img-responsive profile">
+                    <p class="username">Username</p>
+                    <button class="btn btn-package"> <i class="fa fa-star" aria-hidden="true"></i> Starter</button>
+                </div>
+                <li>
+                    <a href="dashboard.html"><span class="fa fa-dashboard">Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="overview.html">
+                        <span class="fa fa-list-alt">Overview</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="transfer.html">
+                        <span class="fa fa-money">Transfer</span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="#anch3">
+                        <span class="fa fa-anchor solo">Recent Transactions</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="contact-support.html">
+                        <span class="fa fa-phone">Contact Support</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="messages.html">
+                        <span class="fa fa-comments">Messages</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- Page content -->
+    <div id="page-content-wrapper">
+        <div class="page-content">
+            <div class="container-fluid">
+               <h4>VIEW MESSAGES</h4>
+               <br><br>
+               <div class="dashboard-area">
+                <div class="message-info">
+                    <div class="message-head">
+                        <p style="color: #1e2b35 !important; font-size: 18px !important;"><b>Admin</b></p>
+                        <p><b>You have successfully logged into our dashboard</b> <span class="date-time"><b>1/13/2021</b> <b style="margin-left: 10px;">5:00pm</b></span></p>
+                    </div>
+   
+                    <div class="message-body">
+                        <p>Now that you've successfully joined our wallet site, you have to first of all fund your wallet. Any other processes you have to follow is very easy which
+                            you would be enlightened on as you continue. In case you encounter any issue in the process of running any transaction you can reach us <a href="contact-support.html" class="message-link"><b>@contact support.</b></a>
+                        </p>
+                     </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Modal Notification -->
+<div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content notification-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel2">Notifications</h4>
+            </div>
+
+            <div class="modal-body">
+                <h4 class="view"><b>View Messages</b></h4>
+                <div class="table-responsive">
+                    <table class="table-hover">
+                        <tr class="message-title" title="View full message">
+                            <th><a href="messages.html" style="text-decoration: none; color: black;">You have successfully logged into our dashboard</a></th>
+                            <th><a href="messages.html" style="text-decoration: none; color: black;">1/11/2021 <br> 5:00pm</a></th>
+                        
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+</div><!-- modal -->
+
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="js/main.js"></script>
+    <!-- <script src="https://cdn.bootcss.com/jquery/1.12.1/jquery.js"></script> -->
+    <script src="js/jquery-1.11.1.js"></script>
+    <script>
+        	/*Menu-toggle*/
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+        
+    });
+
+    </script>
+    <script src="bootstrap-3/js/bootstrap-3.min.js"></script>
+
+  </body>
+</html> 
