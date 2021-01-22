@@ -37,11 +37,11 @@
             
             <div class="nav-header-2">
             <ul class="nav navbar-nav">
-             <h4>TRANSFER</h4>
+             <h4>MESSAGES</h4>
             </ul>
 
             <div class="header-icons" style="float: right;">
-                <span>0</span> <i class="fa fa-bell" aria-hidden="true" data-toggle="modal" data-target="#myModal2" title="View Messages"></i>
+               <span>0</span> <i class="fa fa-bell" aria-hidden="true" data-toggle="modal" data-target="#myModal2" title="View Messages"></i>
                 <i class="fa fa-power-off" aria-hidden="true" title="Log out"></i>
             </div>
         </div>
@@ -73,7 +73,7 @@
                         <span class="fa fa-download">Activity</span>
                     </a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="transfer.html">
                         <span class="fa fa-money">Transfer</span>
                     </a>
@@ -93,7 +93,7 @@
                         <span class="fa fa-code">Refferal Code</span>
                     </a>
                 </li>
-               
+                
                 <li>
                     <a href="contact-support.html">
                         <span class="fa fa-phone">Contact Support</span>
@@ -162,118 +162,47 @@
         }
     </style>
 
- <!-- Page content -->
- <div id="page-content-wrapper">
-    <div class="page-content">
-        <div class="container-fluid">
-           <h4>TRANSFER</h4>
-           <br><br>
-           <div class="dashboard-area">
-
-            <form action="">
-               <div class="container">
-                   <div class="row">
-
-                    <div class="col-md-6">
-                   <div class="form-group">
-                       <label for="wallet-address">Wallet Address</label>
-                       <input type="text" class="form-control" id="wallet-address" name="wallet-address" placeholder="Input Wallet Address" style="max-width: 400px;">
-                   </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="amount">Amount</label>
-                        <input type="text" class="form-control" id="amount" name="amount" placeholder="Enter Amount" style="max-width: 400px;">
+    <!-- Page content -->
+    <div id="page-content-wrapper">
+        <div class="page-content">
+            <div class="container-fluid">
+               <h4>MESSAGE SUMMARY</h4>
+               <br><br>
+               <div class="dashboard-area">
+                <!-- <div class="message-info">
+                    <div class="message-head">
+                        <p style="color: #1e2b35 !important; font-size: 18px !important;"><b>Admin</b></p>
+                        <p><b>You have successfully logged into our dashboard</b> <span class="date-time"><b>1/13/2021</b> <b style="margin-left: 10px;">5:00pm</b></span></p>
                     </div>
+   
+                    <div class="message-body">
+                        <p>Now that you've successfully joined our Smalet, you have to first of all fund your wallet. Any other processes you have to follow is very easy which
+                            you would be enlightened on as you continue. In case you encounter any issue in the process of running any transaction you can reach us <a href="contact-support.html" class="message-link"><b>@contact support.</b></a>
+                        </p>
+                     </div>
+                </div> -->
+
+                <div class="table-responsive">
+                   <table class="table table-bordered table-hover table-striped">
+                       <tr>
+                           <th>Message</th>
+                           <th>Date</th>
+                           <th>Time</th>
+                       </tr>
+                       <tr onclick="document.location = 'messages.html';" title="click to view complete message" style="cursor: pointer;">
+                           <td>Congratulations! You have successfully logged into our dashboard.</td>
+                           <td>1/11/2021</td>
+                           <td> 5:00pm</td>
+                       </tr>
+                   </table>
                 </div>
-                   </div>
 
-                   <div class="form-group">
-                       <a href="confirm-onload.html" type="submit" class="btn btn-transfer">Transfer</a>
-                   </div>
                </div>
-            </form>
-
-            <br><br>
-            <div class="text-right">
-            <button type="submit" class="btn btn-scan-qrcode">Scan qrcode</button>
-        </div>
-
-           </div>
-
-           <br>
-            <h3 class="recent-transactions"><b>Recent Transactions</b></h3>
-            <br>
-            <div class="table-responsive">
-                <table class="table table-striped table-hover">
-                   <tr>
-                       <th>Wallet Address</th>
-                       <th>Amount</th>
-                       <th>Status</th>
-                       <th>Date</th>
-                   </tr>
-
-                   <tr>
-                      <td>546 fanij76</td>
-                      <td>30000</td>
-                      <td>Starter</td>
-                      <td>25 - 01 - 2020</td>
-                   </tr>
-
-                   <tr>
-                       <td>25 hajyt43</td>
-                       <td>20000</td>
-                       <td>Premium</td>
-                       <td>14 - 02 - 2020</td>
-                   </tr>
-
-                   <tr>
-                    <td>235 hiethe56</td>
-                    <td>10000</td>
-                    <td>Premium</td>
-                    <td>15 - 02 - 2020</td>
-                </tr>
-                </table>
             </div>
         </div>
     </div>
- </div>    
- 
- 
-   <!--Fund-Wallet Modal -->
-<div class="modal fade" id="transfer-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          <h3 class="modal-title text-center fund-wallet" id="myModalLabel">Confirm Transfer</h3>
-        </div>
-        <div class="modal-body">
-        
-            <form action="">
 
-                    <div class="form-group">
-                        <label for="wallet-address">Wallet Address</label>
-                        <input type="text" class="form-control" id="wallet-address" name="wallet-address" value="">
-                    </div>
- 
-                     <div class="form-group">
-                         <label for="amount">Amount</label>
-                         <input type="text" class="form-control" id="amount" name="amount" value="">
-                     </div>
- 
-                    <div class="form-group text-center">
-                        <button type="submit" class="btn btn-transfer" data-toggle="modal" data-target="#transfer-modal" style="width: 200px;">Submit</button>
-                    </div>
-
-             </form>
-
-        </div>
-        
-      </div>
-    </div>
-  </div>
+   
 
 
 <!-- Modal Notification -->
@@ -317,8 +246,9 @@
         
     });
 
+
     </script>
     <script src="bootstrap-3/js/bootstrap-3.min.js"></script>
 
   </body>
-</html>    
+</html> 

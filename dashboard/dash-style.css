@@ -205,6 +205,8 @@
   .page-content h4 {
     margin-top: 30px;
   }
+
+  
  
 }
 
@@ -213,7 +215,7 @@
 
 @media (max-width: 480px) {
   #sidebar-wrapper {
-  max-height: 580px;
+  max-height: 570px;
   }
 
   .modal.right .modal-dialog {
@@ -237,9 +239,9 @@
 } 
 
 .profile-area .profile {
-  border-radius: 50%;
-  width: 100px;
-  margin-left: 70px;
+
+  width: 120px;
+  margin-left: 65px;
 }
 
 .profile-area .username {
@@ -487,4 +489,35 @@
 
 .check-account {
   padding-bottom: 30px;
+}
+
+.scan-area {
+  padding-bottom: 40px;
+ margin-top: 20px;
+}
+
+.qr-scan {
+  width: 50px;
+  height: 40px;
+  float: right;
+}
+
+.asterix {
+  color: rgb(245, 142, 17);
+  font-size: 15px;
+}
+
+.btn-scan-qrcode {
+  color: white;
+  background-color: rgb(245, 142, 17);
+  border: 1px solid black;
+  border-radius: 0px;
+  font-size: 17px;
+}
+
+.btn-scan-qrcode:hover {
+  color: rgb(245, 142, 17);
+  background-color: black;
+  border: 1px solid rgb(245, 142, 17);
+ 
 }

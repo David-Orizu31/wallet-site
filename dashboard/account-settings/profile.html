@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link href="bootstrap-3/css/bootstap-3.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="../bootstrap-3/css/bootstap-3.min.css" rel="stylesheet" id="bootstrap-css">
    
    
-    <link rel="stylesheet" href="dash-style.css">
+    <link rel="stylesheet" href="../dash-style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
   <body>
@@ -37,7 +37,7 @@
             
             <div class="nav-header-2">
             <ul class="nav navbar-nav">
-             <h4>TRANSFER</h4>
+             <h4>ACCOUNT SETTINGS</h4>
             </ul>
 
             <div class="header-icons" style="float: right;">
@@ -61,25 +61,25 @@
             <ul class="sidebar-nav nav">
                 <div class="profile-area">
                     <p>WELCOME</p>
-                    <img src="img/qr-code.png" alt="qr-code-scanner" class="img-responsive profile">
+                    <img src="../img/qr-code.png" alt="qr-code-scanner" class="img-responsive profile">
                     <p class="username">Username</p>
                     <!-- <button class="btn btn-package"> <i class="fa fa-star" aria-hidden="true"></i> Starter</button> -->
                 </div>
                 <li>
-                    <a href="dashboard.html"><span class="fa fa-dashboard">Dashboard</span></a>
+                    <a href="../dashboard.html"><span class="fa fa-dashboard">Dashboard</span></a>
                 </li>
                 <li>
-                    <a href="activity.html">
+                    <a href="../activity.html">
                         <span class="fa fa-download">Activity</span>
                     </a>
                 </li>
-                <li class="active">
-                    <a href="transfer.html">
+                <li>
+                    <a href="../transfer.html">
                         <span class="fa fa-money">Transfer</span>
                     </a>
                 </li>
                 <li>
-                    <a href="withdrawal.html">
+                    <a href="../withdrawal.html">
                         <span class="fa fa-skyatlas">Withdrawal</span>
                     </a>
                 </li>
@@ -89,18 +89,18 @@
                     </a>
                 </li> -->
                 <li>
-                    <a href="refferal-code.html">
+                    <a href="../refferal-code.html">
                         <span class="fa fa-code">Refferal Code</span>
                     </a>
                 </li>
-               
+            
                 <li>
-                    <a href="contact-support.html">
+                    <a href="../contact-support.html">
                         <span class="fa fa-phone">Contact Support</span>
                     </a>
                 </li>
                 <li>
-                    <a href="messages.html">
+                    <a href="../messages.html">
                         <span class="fa fa-comments">Messages</span>
                     </a>
                 </li>
@@ -111,22 +111,22 @@
                     </a>
                     <ul class="dropdown-menu" role="menu" style="background-color: transparent;">
                       <li>
-                        <a href="account-settings/profile.html" class="dropdown-item account-item">
+                        <a href="../account-settings/profile.html" class="dropdown-item account-item">
                             <span class="fa fa-user">Profile</span>
                         </a>
                       </li>
                       <li>
-                        <a href="account-settings/bank-info.html" class="dropdown-item account-item">
+                        <a href="../account-settings/bank-info.html" class="dropdown-item account-item">
                             <span class="fa fa-info">Bank Info</span>
                         </a>
                       </li>
                       <li>
-                        <a href="account-settings/settings.html" class="dropdown-item account-item">
+                        <a href="../account-settings/settings.html" class="dropdown-item account-item">
                             <span class="fa fa-gears">Settings</span>
                         </a>
                       </li>
-                      <li>
-                        <a href="account-settings/create-a-worker.html" class="dropdown-item account-item">
+                      <li class="active">
+                        <a href="../account-settings/create-a-worker.html" class="dropdown-item account-item active">
                             <span class="fa fa-plus-circle">Create a Worker</span>
                         </a>
                       </li>
@@ -162,121 +162,81 @@
         }
     </style>
 
- <!-- Page content -->
- <div id="page-content-wrapper">
-    <div class="page-content">
-        <div class="container-fluid">
-           <h4>TRANSFER</h4>
-           <br><br>
-           <div class="dashboard-area">
 
-            <form action="">
-               <div class="container">
-                   <div class="row">
 
-                    <div class="col-md-6">
-                   <div class="form-group">
-                       <label for="wallet-address">Wallet Address</label>
-                       <input type="text" class="form-control" id="wallet-address" name="wallet-address" placeholder="Input Wallet Address" style="max-width: 400px;">
-                   </div>
-                </div>
+    <div id="page-content-wrapper">
+        <div class="page-content">
+            <div class="container-fluid">
+               <h4>PROFILE</h4>
+               <br><br>
+               <div class="dashboard-area" style="background-color: whitesmoke; padding: 20px;">
 
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="amount">Amount</label>
-                        <input type="text" class="form-control" id="amount" name="amount" placeholder="Enter Amount" style="max-width: 400px;">
-                    </div>
-                </div>
-                   </div>
+                
+                    <h5>VIEW PERSONAL DATA</h5>
+                    <br>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                 <label for="name">Name</label>
+                                 <input type="text" name="name" id="name" class="form-control" value="">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="name">Username</label>
+                                <input type="text" name="name" id="name" class="form-control" value="">
+                           </div>
+                        </div>
 
-                   <div class="form-group">
-                       <a href="confirm-onload.html" type="submit" class="btn btn-transfer">Transfer</a>
-                   </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                 <label for="email">Email</label>
+                                 <input type="email" name="email" id="email" class="form-control" value="">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="tel">Phone Number</label>
+                                <input type="tel" name="tel" id="tel" class="form-control" value="">
+                           </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                 <label for="password">Password</label>
+                                 <input data-toggle="password" type="password" name="password" id="password" class="form-control" value="" maxlength="10">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="id">Wallet Id</label>
+                                <input  type="id" name="tel" id="id" class="form-control" value="">
+                           </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                 <label for="address">Wallet Address</label>
+                                 <input type="text" name="address" id="address" class="form-control" value="">
+                            </div>
+                            <!-- <div class="col-md-6 form-group">
+                                <label for="method">Payment Method</label>
+                                <select name="method" id="method" class="selectpicker form-control">
+                                    <option value="id">Wallet id</option>
+                                    <option value="tel">Phone Number</option>
+                                </select>
+                                <p style="float: right; font-size: 13px; color: rgb(245, 142, 17);">How should I recieve payment from my customer/client?</p>
+                           </div> -->
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-transfer">Edit Profile</button>
+                        </div>
+                    </form>
+
+                
+
                </div>
-            </form>
-
-            <br><br>
-            <div class="text-right">
-            <button type="submit" class="btn btn-scan-qrcode">Scan qrcode</button>
-        </div>
-
-           </div>
-
-           <br>
-            <h3 class="recent-transactions"><b>Recent Transactions</b></h3>
-            <br>
-            <div class="table-responsive">
-                <table class="table table-striped table-hover">
-                   <tr>
-                       <th>Wallet Address</th>
-                       <th>Amount</th>
-                       <th>Status</th>
-                       <th>Date</th>
-                   </tr>
-
-                   <tr>
-                      <td>546 fanij76</td>
-                      <td>30000</td>
-                      <td>Starter</td>
-                      <td>25 - 01 - 2020</td>
-                   </tr>
-
-                   <tr>
-                       <td>25 hajyt43</td>
-                       <td>20000</td>
-                       <td>Premium</td>
-                       <td>14 - 02 - 2020</td>
-                   </tr>
-
-                   <tr>
-                    <td>235 hiethe56</td>
-                    <td>10000</td>
-                    <td>Premium</td>
-                    <td>15 - 02 - 2020</td>
-                </tr>
-                </table>
             </div>
         </div>
     </div>
- </div>    
- 
- 
-   <!--Fund-Wallet Modal -->
-<div class="modal fade" id="transfer-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          <h3 class="modal-title text-center fund-wallet" id="myModalLabel">Confirm Transfer</h3>
-        </div>
-        <div class="modal-body">
-        
-            <form action="">
-
-                    <div class="form-group">
-                        <label for="wallet-address">Wallet Address</label>
-                        <input type="text" class="form-control" id="wallet-address" name="wallet-address" value="">
-                    </div>
- 
-                     <div class="form-group">
-                         <label for="amount">Amount</label>
-                         <input type="text" class="form-control" id="amount" name="amount" value="">
-                     </div>
- 
-                    <div class="form-group text-center">
-                        <button type="submit" class="btn btn-transfer" data-toggle="modal" data-target="#transfer-modal" style="width: 200px;">Submit</button>
-                    </div>
-
-             </form>
-
-        </div>
-        
-      </div>
-    </div>
-  </div>
 
 
-<!-- Modal Notification -->
+     <!-- Modal Notification -->
 <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
     <div class="modal-dialog" role="document">
         <div class="modal-content notification-content">
@@ -291,8 +251,8 @@
                 <div class="table-responsive">
                     <table class="table-hover">
                         <tr class="message-title" title="View full message">
-                            <th><a href="message-table.html" style="text-decoration: none; color: black;">You have successfully logged into our dashboard</a></th>
-                            <th><a href="message-table.html" style="text-decoration: none; color: black;">1/11/2021 <br> 5:00pm</a></th>
+                            <th><a href="../message-table.html" style="text-decoration: none; color: black;">You have successfully logged into our dashboard</a></th>
+                            <th><a href="../message-table.html" style="text-decoration: none; color: black;">1/11/2021 <br> 5:00pm</a></th>
                         
                         </tr>
                     </table>
@@ -303,12 +263,32 @@
     </div><!-- modal-dialog -->
 </div><!-- modal -->
 
-     <!-- Optional JavaScript -->
+
+<script src="../js/sweet-alert.js"></script>
+<script>
+    function myFunction() {
+      var copyText = document.getElementById("myInput");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999)
+      document.execCommand("copy");
+      Swal.fire({
+                icon: 'success',
+                title: 'Success',
+                text: "Copied id: " + copyText.value,
+  
+            });
+}
+
+
+    </script>
+
+
+<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
     <!-- <script src="https://cdn.bootcss.com/jquery/1.12.1/jquery.js"></script> -->
-    <script src="js/jquery-1.11.1.js"></script>
+    <script src="../js/jquery-1.11.1.js"></script>
     <script>
         	/*Menu-toggle*/
     $("#menu-toggle").click(function(e) {
@@ -318,7 +298,9 @@
     });
 
     </script>
-    <script src="bootstrap-3/js/bootstrap-3.min.js"></script>
+    <script src="../bootstrap-3/js/bootstrap-3.min.js"></script>
+    <script defer src="https://use.font-awesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+    <script src="../js/show-password.min.js"></script>
 
   </body>
 </html>    

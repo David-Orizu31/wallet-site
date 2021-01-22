@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Wallet Dashboard</title>
+    <title>Smalet</title>
     <!-- Required meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -31,7 +31,7 @@
                     <a id="menu-toggle" href="#" class=" btn-menu toggle">
                         <i class="fa fa-bars"></i>
                     </a>
-    				<a href="#" class="project-title">Wallet site</a>
+    				<a href="#" class="project-title">Smalet</a>
                 </div>
             </div>
             
@@ -60,17 +60,17 @@
         <nav id="spy">
             <ul class="sidebar-nav nav">
                 <div class="profile-area">
-                    <p>PROFILE</p>
-                    <img src="profile/user-profile.png" alt="wallet-profile" class="img-responsive profile">
+                    <p>WELCOME</p>
+                    <img src="img/qr-code.png" alt="qr-code-scanner" class="img-responsive profile">
                     <p class="username">Username</p>
-                    <button class="btn btn-package"> <i class="fa fa-star" aria-hidden="true"></i> Starter</button>
+                    <!-- <button class="btn btn-package"> <i class="fa fa-star" aria-hidden="true"></i> Starter</button> -->
                 </div>
                 <li>
                     <a href="dashboard.html"><span class="fa fa-dashboard">Dashboard</span></a>
                 </li>
                 <li>
-                    <a href="overview.html">
-                        <span class="fa fa-list-alt">Overview</span>
+                    <a href="activity.html">
+                        <span class="fa fa-download">Activity</span>
                     </a>
                 </li>
                 <li>
@@ -78,11 +78,22 @@
                         <span class="fa fa-money">Transfer</span>
                     </a>
                 </li>
+                <li>
+                    <a href="withdrawal.html">
+                        <span class="fa fa-skyatlas">Withdrawal</span>
+                    </a>
+                </li>
                 <!-- <li>
                     <a href="#anch3">
                         <span class="fa fa-anchor solo">Recent Transactions</span>
                     </a>
                 </li> -->
+                <li>
+                    <a href="refferal-code.html">
+                        <span class="fa fa-code">Refferal Code</span>
+                    </a>
+                </li>
+                
                 <li>
                     <a href="contact-support.html">
                         <span class="fa fa-phone">Contact Support</span>
@@ -93,9 +104,63 @@
                         <span class="fa fa-comments">Messages</span>
                     </a>
                 </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle account-toggle" data-toggle="dropdown">
+                        <span class="fa fa-gears">Account Settings</span><span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" style="background-color: transparent;">
+                      <li>
+                        <a href="account-settings/profile.html" class="dropdown-item account-item">
+                            <span class="fa fa-user">Profile</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="account-settings/bank-info.html" class="dropdown-item account-item">
+                            <span class="fa fa-info">Bank Info</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="account-settings/settings.html" class="dropdown-item account-item">
+                            <span class="fa fa-gears">Settings</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="account-settings/create-a-worker.html" class="dropdown-item account-item">
+                            <span class="fa fa-plus-circle">Create a Worker</span>
+                        </a>
+                      </li>
+                     
+                    </ul>
+                  </li>
             </ul>
         </nav>
     </div>
+
+    <style>
+        .account-item {
+            padding-top: 15px !important;
+            padding-bottom: 15px !important;
+        }
+
+        .account-item.active {
+            color: #fff !important;
+  background: rgba(255,255,255,0.2) !important;
+  text-decoration: none !important;
+  border-left: 2px solid rgb(245, 142, 17) !important;
+        }
+
+        .account-toggle.active {
+            background-color: transparent !important;
+        }
+    
+        .account-toggle:hover {
+            color: #fff !important;
+  background: rgba(255,255,255,0.2) !important;
+  text-decoration: none !important;
+  border-left: 2px solid rgb(245, 142, 17) !important;
+        }
+    </style>
 
 
     <!-- Page content -->
@@ -112,7 +177,7 @@
                     </div>
    
                     <div class="message-body">
-                        <p>Now that you've successfully joined our wallet site, you have to first of all fund your wallet. Any other processes you have to follow is very easy which
+                        <p>Now that you've successfully joined our Smalet, you have to first of all fund your wallet. Any other processes you have to follow is very easy which
                             you would be enlightened on as you continue. In case you encounter any issue in the process of running any transaction you can reach us <a href="contact-support.html" class="message-link"><b>@contact support.</b></a>
                         </p>
                      </div>
@@ -137,8 +202,8 @@
                 <div class="table-responsive">
                     <table class="table-hover">
                         <tr class="message-title" title="View full message">
-                            <th><a href="messages.html" style="text-decoration: none; color: black;">You have successfully logged into our dashboard</a></th>
-                            <th><a href="messages.html" style="text-decoration: none; color: black;">1/11/2021 <br> 5:00pm</a></th>
+                            <th><a href="message-table.html" style="text-decoration: none; color: black;">You have successfully logged into our dashboard</a></th>
+                            <th><a href="message-table.html" style="text-decoration: none; color: black;">1/11/2021 <br> 5:00pm</a></th>
                         
                         </tr>
                     </table>
