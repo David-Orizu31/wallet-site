@@ -176,6 +176,8 @@
   #sidebar-wrapper {
     top: 90px;
     max-height: 620px;
+    overflow-y: auto;
+    position: fixed;
   }
 
   .nav-header-2 {
@@ -216,6 +218,8 @@
 @media (max-width: 480px) {
   #sidebar-wrapper {
   max-height: 570px;
+  overflow-y: auto;
+  position: fixed;
   }
 
   .modal.right .modal-dialog {
