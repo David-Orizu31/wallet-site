@@ -532,3 +532,7 @@
   position: relative !important;
   overflow-y: auto !important;
 }
+
+.withdraw:hover {
+  color: white;
+}
