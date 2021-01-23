@@ -208,7 +208,9 @@
     margin-top: 30px;
   }
 
-  
+  .account-menu {
+  display: block !important;
+  }
  
 }
 
@@ -524,4 +526,9 @@
   background-color: black;
   border: 1px solid rgb(245, 142, 17);
  
+}
+
+.account-menu {
+  position: relative !important;
+  overflow-y: auto !important;
 }
