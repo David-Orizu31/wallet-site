@@ -536,7 +536,7 @@
 }
 
 .dropdown-backdrop {
-  z-index:0 !important;
+  position: static;
 }
 
 .withdraw:hover {
