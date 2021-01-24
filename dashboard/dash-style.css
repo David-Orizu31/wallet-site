@@ -208,6 +208,9 @@
     margin-top: 30px;
   }
 
+  .account-menu {
+    position: absolute !important;
+  }
  
 }
 
