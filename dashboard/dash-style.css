@@ -533,6 +533,7 @@
 .account-menu {
   position: relative !important;
   overflow-y: auto !important;
+  z-index:0 !important;
 }
 
 .withdraw:hover {
