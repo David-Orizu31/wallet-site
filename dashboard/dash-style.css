@@ -208,9 +208,6 @@
     margin-top: 30px;
   }
 
-  .account-menu {
-  display: block !important;
-  }
  
 }
 
@@ -226,6 +223,11 @@
 
   .modal.right .modal-dialog {
     width: 100% !important;
+  }
+
+  .nav-pills li {
+    margin-right: 0px;
+    margin-top: 15px;
   }
 }
 
@@ -535,4 +537,40 @@
 
 .withdraw:hover {
   color: white;
+}
+
+.nav-pills li {
+  color: white !important;
+  background-color: rgb(245, 142, 17) !important;
+  margin-right: 30px;
+  border-radius: 3px;
+}
+
+.nav-pills li a:hover {
+  color: black !important;
+  background-color: white !important;
+  border: 1px solid rgb(245, 142, 17) !important;
+}
+
+.nav-pills li.active a:hover {
+  color: black !important;
+  background-color: white !important;
+  border: 1px solid rgb(245, 142, 17) !important;
+}
+
+.nav-pills li.active a {
+  background-color: black !important;
+
+}
+
+.nav-pills li .text-white {
+  color: white;
+}
+
+.myaccount-btn button{
+  margin-right: 20px !important;
+}
+
+.myaccount-btn .save-button {
+  width: 100px !important;
 }
