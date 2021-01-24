@@ -533,6 +533,9 @@
 .account-menu {
   position: relative !important;
   overflow-y: auto !important;
+}
+
+.dropdown-backdrop {
   z-index:0 !important;
 }
 
