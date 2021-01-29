@@ -190,7 +190,7 @@
                        </div>
 
                        <div class="col-md-6">
-                        <button type="submit" class="btn btn-fund-wallet">Fund your Wallet</button>
+                        <button type="submit" class="btn btn-fund-wallet" data-toggle="modal" data-target="#myModal-2">Fund your Wallet</button>
                        </div>
                    </div>
 
@@ -329,36 +329,34 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          <h3 class="modal-title text-center fund-wallet" id="myModalLabel">Fund your Wallet</h3>
+          <h3 class="modal-title text-center fund-wallet" id="myModalLabel">Choose Payment Account</h3>
         </div>
         <div class="modal-body">
+
         
-        <form action="">
-          <div class="form-group">
-            <label for="amount">Amount</label>
-            <input type="text" class="form-control" id="amount" name="amount" placeholder="Enter amount">
-          </div>
+            <form action="">
+                <div class="container check-account">
+                    <div class="radio">
+                        <label for="id" style="font-size: 18px;">
+                    <input type="radio" name="optionsRadios" id="id" value="option1" checked>
+                    Pay Stack</label>
+                    </div>
 
-          <div class="form-group">
-            <label for="card-number">Card Number</label>
-            <input type="text" class="form-control" id="card-number" name="card-number" placeholder="Enter card number">
-         </div>
+                    <br>
+                     
+                    <div class="radio">
+                    <label for="number" style="font-size: 18px;">
+                    <input type="radio" name="optionsRadios" id="number" value="option2">
+                    Smalet</label>
+                    </div>
+                </div>   
 
-         <div class="row">
-             <div class="form-group col-md-6">
-               <label for="expiry-date">Expiry Date</label>
-               <input type="date" class="form-control" id="expiry-date" name="expiry-date" placeholder="mm/dd/yy">
-             </div>
-             <div class="form-group col-md-6">
-              <label for="wallet-id">Wallet ID</label>
-              <input type="text" class="form-control" id="wallet-id" name="id" placeholder="Insert given ID">
-             </div>
-         </div>
+                 <div class="form-group text-center" style="padding: 20px;">
+             <a type="submit" href="account-details.html" class="btn btn-fund">Next</a>
+         </div> 
 
-         <div class="form-group text-center" style="padding: 20px;">
-             <button type="submit" class="btn btn-fund">Fund Wallet</button>
-         </div>
-        </form>
+            </form>
+
 
         </div>
         
